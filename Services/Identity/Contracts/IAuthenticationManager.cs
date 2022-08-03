@@ -7,5 +7,4 @@ namespace Identity.Contracts
         Task<bool> ValidateUser(UserForAuthenticationDto userForAuth);
         Task<string> CreateToken();
     }
-
 }

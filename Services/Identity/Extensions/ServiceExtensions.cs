@@ -46,7 +46,7 @@ namespace Identity.Extensions
             configuration)
         {
             var jwtSettings = configuration.GetSection("JwtSettings");
-            var secretKey = "secret123456789secret123456789secret123456789"/*Environment.GetEnvironmentVariable("SECRET")*/;
+            var secretKey = jwtSettings.GetSection("SECRET").Value;
             services.AddAuthentication(opt =>
             {
                 opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

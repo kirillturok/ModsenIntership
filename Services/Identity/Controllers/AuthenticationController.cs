@@ -33,7 +33,6 @@ namespace Identity.Controllers
                 return UnprocessableEntity(ModelState);
             }
 
-            userForRegistration.Roles ??= new List<string>(){"User"};
             var user = _mapper.Map<User>(userForRegistration);
             var result = await _userManager.CreateAsync(user, userForRegistration.Password);
             if (!result.Succeeded)

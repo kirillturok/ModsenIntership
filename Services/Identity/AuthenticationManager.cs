@@ -13,7 +13,7 @@ namespace Identity
     {
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _configuration;
-        private User? _user;
+        private User _user;
 
         public AuthenticationManager(UserManager<User> userManager, IConfiguration
             configuration)
@@ -39,8 +39,10 @@ namespace Identity
 
         private SigningCredentials GetSigningCredentials()
         {
-            var key =
-                Encoding.UTF8.GetBytes("secret123456789secret123456789secret123456789"/*Environment.GetEnvironmentVariable("SECRET")*/);
+            var key = Encoding.UTF8.GetBytes(
+                _configuration.GetSection("JwtSettings")
+                    .GetSection("SECRET")
+                    .Value);
             var secret = new SymmetricSecurityKey(key);
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
