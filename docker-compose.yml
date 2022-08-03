@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  identity:
+    image: ${DOCKER_REGISTRY-}identity
+    build:
+      context: .
+      dockerfile: Services/Identity/Dockerfile
+
+  project1:
+    image: ${DOCKER_REGISTRY-}project1
+    build:
+      context: .
+      dockerfile: Services/Project1/Dockerfile
+
+
+  project2:
+    image: ${DOCKER_REGISTRY-}project2
+    build:
+      context: .
+      dockerfile: Services/Project2/Dockerfile
+
