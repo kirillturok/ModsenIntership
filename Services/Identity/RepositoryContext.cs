@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Identity
 {
-    public class RepositoryContext : IdentityDbContext<User>
+    public sealed class RepositoryContext : IdentityDbContext<User>
     {
         public RepositoryContext(DbContextOptions options) : base(options)
         {
