@@ -2,16 +2,18 @@ using Identity;
 using Identity.Contracts;
 using Identity.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureCors();
+//builder.Services.ConfigureCors();
 builder.Services.AddControllers();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+
 builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.AddScoped<IAuthenticationManager, AuthenticationManager>();
 builder.Services.ConfigureSwagger();
@@ -41,11 +43,9 @@ app.UseSwaggerUI(s =>
 });
 
 app.ConfigureExceptionHandler();
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseCors("CorsPolicy");
-app.UseForwardedHeaders(
-    new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.All });
+//app.UseHttpsRedirection();
+//app.UseStaticFiles();
+//app.UseCors("CorsPolicy");
 
 app.UseRouting();
 

@@ -29,10 +29,19 @@ services:
     ports:
         - 5672:5672
         - 15672:15672
+
+  #identitymssql:
+  #  image: mcr.microsoft.com/mssql/server:2019-latest
+  #  container_name: identitymssql
+  #  ports:
+  #    - "1433:1433"
+  #  environment:
+  #    - ACCEPT_EULA="Y"
+  #    - SA_PASSWORD="password1"
+
    # networks:
     #    - rabbitmq_go_net
 
 #networks:
  # rabbitmq_go_net:
   #  driver: bridge
-
