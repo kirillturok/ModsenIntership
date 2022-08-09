@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Identity.Models
+namespace CqrsExample.Models
 {
     public class User : IdentityUser
     {

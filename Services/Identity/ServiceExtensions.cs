@@ -1,6 +1,6 @@
 ﻿using System.Text;
-using Identity;
-using Identity.Models;
+using CqrsExample;
+using CqrsExample.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

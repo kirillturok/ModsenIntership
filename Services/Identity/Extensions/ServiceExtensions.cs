@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Text;
-using Identity.Models;
+using CqrsExample.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
-namespace Identity.Extensions
+namespace CqrsExample.Extensions
 {
     public static class ServiceExtensions
     {

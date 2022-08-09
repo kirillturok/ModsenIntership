@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using System.Text;
-using Identity.Contracts;
-using Identity.DTO;
-using Identity.Models;
+using CqrsExample.Contracts;
+using CqrsExample.DTO;
+using CqrsExample.Models;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Identity
+namespace CqrsExample
 {
     public class AuthenticationManager : IAuthenticationManager
     {

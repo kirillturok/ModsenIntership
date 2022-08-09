@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using CqrsExample.DTO;
-using CqrsExample.Models;
+using CqrsExample.CQRS.Commands.CreateProduct;
 
 namespace CqrsExample
 {
@@ -8,7 +7,7 @@ namespace CqrsExample
     {
         public MappingProfile()
         {
-            CreateMap<UserForRegistrationDto, User>();
+            CreateMap<CreateProductCommand, Product>();
         }
     }
 }

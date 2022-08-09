@@ -45,3 +45,9 @@ services:
 #networks:
  # rabbitmq_go_net:
   #  driver: bridge
+  cqrsexample:
+    image: ${DOCKER_REGISTRY-}cqrsexample
+    build:
+      context: .
+      dockerfile: Services/CqrsExample/Dockerfile
+

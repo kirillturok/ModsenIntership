@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Identity.Contracts;
-using Identity.DTO;
-using Identity.Models;
+using CqrsExample.Contracts;
+using CqrsExample.DTO;
+using CqrsExample.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Identity.Controllers
+namespace CqrsExample.Controllers
 {
     [Route("api/authentication")]
     [ApiController]

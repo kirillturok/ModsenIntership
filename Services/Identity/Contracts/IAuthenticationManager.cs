@@ -1,6 +1,6 @@
-﻿using Identity.DTO;
+﻿using CqrsExample.DTO;
 
-namespace Identity.Contracts
+namespace CqrsExample.Contracts
 {
     public interface IAuthenticationManager
     {

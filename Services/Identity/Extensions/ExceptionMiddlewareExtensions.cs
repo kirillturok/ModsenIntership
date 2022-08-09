@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using System.Net;
 
-namespace Identity.Extensions
+namespace CqrsExample.Extensions
 {
     public static class ExceptionMiddlewareExtensions
     {

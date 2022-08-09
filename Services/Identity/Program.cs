@@ -1,6 +1,6 @@
-using Identity;
-using Identity.Contracts;
-using Identity.Extensions;
+using CqrsExample;
+using CqrsExample.Contracts;
+using CqrsExample.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Identity;
 

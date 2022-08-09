@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Identity.DTO
+namespace CqrsExample.DTO
 {
     public class UserForAuthenticationDto
     {

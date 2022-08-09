@@ -1,9 +1,9 @@
-﻿using Identity.Configuration;
-using Identity.Models;
+﻿using CqrsExample.Configuration;
+using CqrsExample.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Identity
+namespace CqrsExample
 {
     public sealed class RepositoryContext : IdentityDbContext<User>
     {
