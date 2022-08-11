@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
+using Repository;
+using Repository.Entities;
 
 namespace CqrsExample.CQRS.Commands.CreateProduct;
 

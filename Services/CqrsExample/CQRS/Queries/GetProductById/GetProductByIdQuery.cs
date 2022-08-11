@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Repository.Entities;
 
 namespace CqrsExample.CQRS.Queries.GetProductById;
 

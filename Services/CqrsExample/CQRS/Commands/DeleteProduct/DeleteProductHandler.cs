@@ -1,5 +1,7 @@
 ﻿using CqrsExample.Exceptions;
 using MediatR;
+using Repository;
+using Repository.Entities;
 
 namespace CqrsExample.CQRS.Commands.DeleteProduct;
 

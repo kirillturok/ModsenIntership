@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repository;
+using Repository.Contracts;
 
-namespace CqrsExample.Extensions;
+namespace _3LayerExample.Extensions;
 
 public static class ServiceExtensions
 {
@@ -9,8 +10,8 @@ public static class ServiceExtensions
             IConfiguration configuration)
             => services.AddDbContext<RepositoryContext>(opts
                 => opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-            b => b.MigrationsAssembly("CqrsExample")));
+            b => b.MigrationsAssembly("3LayerExample")));
 
     public static void ConfigureRepositoryManager(this IServiceCollection services)
-            => services.AddScoped<ProductRepository>();
+            => services.AddScoped<IRepositoryManager, RepositoryManager>();
 }

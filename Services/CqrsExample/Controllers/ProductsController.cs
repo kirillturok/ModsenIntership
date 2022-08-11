@@ -5,6 +5,7 @@ using CqrsExample.CQRS.Queries.GetProductById;
 using CqrsExample.CQRS.Queries.GetProducts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Repository.Entities;
 
 namespace CqrsExample.Controllers;
 

@@ -1,6 +1,8 @@
 ﻿using CqrsExample.Exceptions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Repository;
+using Repository.Entities;
 
 namespace CqrsExample.CQRS.Queries.GetProductById;
 

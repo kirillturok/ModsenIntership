@@ -2,13 +2,12 @@
 using CqrsExample.DTO;
 using CqrsExample.Models;
 
-namespace CqrsExample
+namespace CqrsExample;
+
+public class MappingProfile : Profile
 {
-    public class MappingProfile : Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
-            CreateMap<UserForRegistrationDto, User>();
-        }
+        CreateMap<UserForRegistrationDto, User>();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CqrsExample.CQRS.Commands.CreateProduct;
+using Repository.Entities;
 
 namespace CqrsExample
 {

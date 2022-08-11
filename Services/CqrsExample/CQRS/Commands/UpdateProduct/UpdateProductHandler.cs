@@ -1,6 +1,8 @@
 ﻿using CqrsExample.Exceptions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Repository;
+using Repository.Entities;
 
 namespace CqrsExample.CQRS.Commands.UpdateProduct;
 
@@ -18,7 +20,7 @@ public class UpdateProductHandler : IRequestHandler<UpdateProductCommand>
             await _context.Products.FirstOrDefaultAsync(note =>
                 note.Id == request.product.Id, cancellationToken);
 
-        if (entity == null/* || entity.UserId != request.UserId*/)
+        if (entity == null)
         {
             throw new NotFoundException(nameof(Product), request.product.Id);
         }

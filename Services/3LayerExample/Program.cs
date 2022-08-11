@@ -1,20 +1,19 @@
-using CqrsExample.Extensions;
-using CqrsExample;
-using MediatR;
+using _3LayerExample;
+using _3LayerExample.BusinessLogicLayer;
+using _3LayerExample.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddMediatR(typeof(Program));
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-//builder.Services.AddValidatorsFromAssemblies(new[] { Assembly.GetExecutingAssembly() });
 
-//builder.Services.ConfigureRepositoryManager();
+builder.Services.AddScoped<ProductBll>();
+
+builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.AddControllers();
-
-// Swagger
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

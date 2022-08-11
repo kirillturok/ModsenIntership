@@ -51,3 +51,10 @@ services:
       context: .
       dockerfile: Services/CqrsExample/Dockerfile
 
+
+  3layerexample:
+    image: ${DOCKER_REGISTRY-}3layerexample
+    build:
+      context: .
+      dockerfile: Services/3LayerExample/Dockerfile
+
