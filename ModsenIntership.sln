@@ -15,9 +15,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqrsExample", "Services\CqrsExample\CqrsExample.csproj", "{E503C9ED-F4E4-448F-8EF9-52C4DEBFA099}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3LayerExample", "Services\3LayerExample\3LayerExample.csproj", "{C1E7ED14-4E0E-4C61-8D60-2EC27EF99757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3LayerExample", "Services\3LayerExample\3LayerExample.csproj", "{C1E7ED14-4E0E-4C61-8D60-2EC27EF99757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{EF580B19-7C18-4D50-BB45-3D6C44A75DC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{EF580B19-7C18-4D50-BB45-3D6C44A75DC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
