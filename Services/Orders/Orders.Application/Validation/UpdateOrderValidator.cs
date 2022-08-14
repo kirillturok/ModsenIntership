@@ -14,6 +14,6 @@ public class UpdateOrderValidator : AbstractValidator<UpdateOrderDto>
                 .NotEmpty();
 
         RuleFor(order => order.Products)
-                .NotEmpty();
+                .NotNull();
     }
 }

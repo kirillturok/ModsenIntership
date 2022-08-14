@@ -5,8 +5,9 @@ using Orders.Domain.Models;
 
 namespace Orders.WebApi.Controllers;
 
-[Route("api/orders")]
+[Route("api/[controller]")]
 [ApiController]
+//[ApiExplorerSettings(GroupName = "Events")]
 public class OrdersController : ControllerBase
 {
     private readonly IOrderService _orderService;
@@ -16,8 +17,7 @@ public class OrdersController : ControllerBase
         _orderService = orderService;
     }
 
-    [HttpGet]
-    [Route("getOrders")]
+    [HttpGet("getOrders")]
     public async Task<ActionResult<IEnumerable<Order>>> GetAllOrders(CancellationToken cancellationToken)
     {
         var res = await _orderService.GetAllOrdersAsync(cancellationToken);
@@ -25,8 +25,7 @@ public class OrdersController : ControllerBase
         return Ok(res);
     }
 
-    [HttpGet("{id}")]
-    [Route("getOrder")]
+    [HttpGet("getOrder/{id}")]
     public async Task<ActionResult<Order>> GetOrder([FromRoute] Guid id, CancellationToken cancellationToken)
     {
         var res = await _orderService.GetOrderAsync(id, cancellationToken);
@@ -34,8 +33,7 @@ public class OrdersController : ControllerBase
         return Ok(res);
     }
 
-    [Route("createProduct")]
-    [HttpPost]
+    [HttpPost("createOrder")]
     public async Task<ActionResult<Order>> CreateOrder([FromBody] CreateOrderDto orderDto, CancellationToken cancellationToken)
     {
         var res = await _orderService.CreateOrderAsync(orderDto, cancellationToken);
@@ -43,8 +41,7 @@ public class OrdersController : ControllerBase
         return Ok(res);
     }
 
-    [Route("updateProduct")]
-    [HttpPut]
+    [HttpPut("updateOrder")]
     public async Task<ActionResult<Order>> UpdateOrder([FromBody] UpdateOrderDto orderDto, CancellationToken cancellationToken)
     {
         var res = await _orderService.UpdateOrderAsync(orderDto, cancellationToken);
@@ -52,8 +49,7 @@ public class OrdersController : ControllerBase
         return Ok(res);
     }
 
-    [Route("deleteProduct")]
-    [HttpDelete("{id}")]
+    [HttpDelete("deleteOrder/{id}")]
     public async Task<ActionResult> DeleteOrder([FromRoute] Guid id, CancellationToken cancellationToken)
     {
         await _orderService.DeleteOrderAsync(id, cancellationToken);
