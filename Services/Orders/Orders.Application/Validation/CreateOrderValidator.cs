@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
-using Orders.Application.DTO;
+using Products.Application.DTO;
 
-namespace Orders.Application.Validation;
+namespace Products.Application.Validation;
 
 public class CreateOrderValidator : AbstractValidator<CreateOrderDto>
 {

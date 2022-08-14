@@ -1,11 +1,11 @@
 using FluentValidation;
-using Orders.Application.DTO;
-using Orders.Application.Mapper;
-using Orders.Application.Services;
-using Orders.Application.Validation;
-using Orders.Repository;
-using Orders.Repository.Contracts;
-using Orders.WebApi.Extensions;
+using Products.Application.DTO;
+using Products.Application.Mapper;
+using Products.Application.Services;
+using Products.Application.Validation;
+using Products.Repository;
+using Products.Repository.Contracts;
+using Products.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

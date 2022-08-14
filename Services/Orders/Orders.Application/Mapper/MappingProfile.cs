@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Orders.Application.DTO;
-using Orders.Domain.Models;
+using Products.Application.DTO;
+using Products.Domain.Models;
 
-namespace Orders.Application.Mapper;
+namespace Products.Application.Mapper;
 
 public class MappingProfile : Profile
 {

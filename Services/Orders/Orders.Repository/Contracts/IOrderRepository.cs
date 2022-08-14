@@ -1,6 +1,6 @@
-﻿using Orders.Domain.Models;
+﻿using Products.Domain.Models;
 
-namespace Orders.Repository.Contracts;
+namespace Products.Repository.Contracts;
 
 public interface IOrderRepository : IRepositoryBase<Order>
 {

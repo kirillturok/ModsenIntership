@@ -1,7 +1,7 @@
-﻿using Orders.Application.DTO;
-using Orders.Domain.Models;
+﻿using Products.Application.DTO;
+using Products.Domain.Models;
 
-namespace Orders.Application.Services;
+namespace Products.Application.Services;
 
 public interface IOrderService
 {

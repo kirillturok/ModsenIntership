@@ -1,8 +1,8 @@
-﻿using Orders.Domain.Models;
-using Orders.Repository.Context;
-using Orders.Repository.Contracts;
+﻿using Products.Domain.Models;
+using Products.Repository.Context;
+using Products.Repository.Contracts;
 
-namespace Orders.Repository;
+namespace Products.Repository;
 
 public class OrderRepository : RepositoryBase<Order>, IOrderRepository
 {

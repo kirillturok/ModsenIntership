@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Orders.Domain.Models;
+using Products.Domain.Models;
 
-namespace Orders.Repository.Configuration;
+namespace Products.Repository.Configuration;
 
 public class OrderConfiguration : IEntityTypeConfiguration<Order>
 {

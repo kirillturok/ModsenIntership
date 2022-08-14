@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
-using Orders.Application.DTO;
-using Orders.Application.Validation;
-using Orders.Domain.Models;
-using Repository.Contracts;
 using FluentValidation;
-using Orders.Repository.Contracts;
-using Orders.Application.Exceptions;
+using Products.Application.DTO;
+using Products.Application.Exceptions;
+using Products.Application.Validation;
+using Products.Domain.Models;
+using Products.Repository.Contracts;
 
-namespace Orders.Application.Services;
+namespace Products.Application.Services;
 
 public class OrderService : IOrderService
 {

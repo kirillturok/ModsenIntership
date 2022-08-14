@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Orders.Application.DTO;
-using Orders.Application.Services;
-using Orders.Domain.Models;
+using Products.Application.DTO;
+using Products.Application.Services;
+using Products.Domain.Models;
 
-namespace Orders.WebApi.Controllers;
+namespace Products.WebApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

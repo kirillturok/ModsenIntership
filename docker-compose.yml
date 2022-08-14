@@ -58,3 +58,10 @@ services:
       context: .
       dockerfile: Services/3LayerExample/Dockerfile
 
+
+  orders.webapi:
+    image: ${DOCKER_REGISTRY-}orderswebapi
+    build:
+      context: .
+      dockerfile: Services/Orders/Orders.WebApi/Dockerfile
+

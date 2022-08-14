@@ -1,4 +1,4 @@
-﻿namespace Orders.Application.DTO;
+﻿namespace Products.Application.DTO;
 
 public class UpdateOrderDto
 {

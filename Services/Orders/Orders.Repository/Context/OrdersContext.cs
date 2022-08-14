@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Orders.Domain.Models;
-using Orders.Repository.Configuration;
+using Products.Domain.Models;
+using Products.Repository.Configuration;
 
-namespace Orders.Repository.Context;
+namespace Products.Repository.Context;
 
 public class OrdersContext : DbContext
 {

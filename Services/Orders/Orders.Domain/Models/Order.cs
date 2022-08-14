@@ -1,4 +1,4 @@
-﻿namespace Orders.Domain.Models;
+﻿namespace Products.Domain.Models;
 
 public class Order : Entity
 {

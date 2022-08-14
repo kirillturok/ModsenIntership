@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Orders.Repository;
-using Orders.Repository.Context;
+using Products.Repository;
+using Products.Repository.Context;
 
-namespace Orders.WebApi.Extensions;
+namespace Products.WebApi.Extensions;
 
 public static class ServiceExtensions
 {

@@ -1,4 +1,4 @@
-﻿namespace Orders.Application.Exceptions;
+﻿namespace Products.Application.Exceptions;
 
 public class NotFoundException : Exception
 {
