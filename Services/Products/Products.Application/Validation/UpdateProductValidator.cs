@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using Products.Application.CQRS.Commands.UpdateCommand;
 
-namespace Products.Application.CQRS.Commands.UpdateProduct
+namespace Products.Application.Validation
 {
     public class UpdateProductValidator : AbstractValidator<UpdateProductCommand>
     {

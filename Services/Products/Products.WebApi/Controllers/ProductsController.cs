@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Products.Application.CQRS.Commands.CreateProduct;
-using Products.Application.CQRS.Commands.DeleteProduct;
-using Products.Application.CQRS.Commands.UpdateProduct;
+using Products.Application.CQRS.Commands.CreateCommand;
+using Products.Application.CQRS.Commands.DeleteCommand;
+using Products.Application.CQRS.Commands.UpdateCommand;
 using Products.Application.CQRS.Queries.GetProductById;
 using Products.Application.CQRS.Queries.GetProducts;
 using Products.Domain.Models;

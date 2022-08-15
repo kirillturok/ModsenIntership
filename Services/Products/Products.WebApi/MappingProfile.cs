@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Products.Application.CQRS.Commands.CreateProduct;
+using Products.Application.CQRS.Commands.CreateCommand;
 using Products.Domain.Models;
 
 namespace Products.WebApi

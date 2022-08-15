@@ -3,7 +3,7 @@ using Products.Application.Exceptions;
 using Products.Domain.Models;
 using Products.Repository.Context;
 
-namespace Products.Application.CQRS.Commands.DeleteProduct;
+namespace Products.Application.CQRS.Commands.DeleteCommand;
 
 public class DeleteProductHandler : IRequestHandler<DeleteProductCommand>
 {
